@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class CharacterController : InputReceiver
 {
-    public float speed=1.0F;
+    public float speed = 1.0F;
+
+    private void Start ()
+    {
+        InputDispatcher.instance.openReceiver ( this );
+    }
+
+    private void OnDestroy ()
+    {
+        InputDispatcher.instance.closeReceiver ( this );
+    }
+
     public override void updateInput ( Dictionary<InputDispatcher.inputs , InputDispatcher.input> inputList )
     {
-        throw new System.NotImplementedException ();
+        transform.position += new Vector3 ( Input.GetAxis ( "Horizontal" ) , Input.GetAxis ( "Vertical" ) , 0 ) * Time.fixedDeltaTime;
     }
 
     public override void fixedUpdateInput ()
     {
-        transform.position += new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0)*Time.fixedDeltaTime;
+        transform.position += new Vector3 ( Input.GetAxis ( "Horizontal" ) , Input.GetAxis ( "Vertical" ) , 0 ) * Time.fixedDeltaTime;
     }
 }
