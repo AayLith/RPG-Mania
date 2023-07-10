@@ -13,19 +13,7 @@ public class Notification
     //}
     public enum notifications
     {
-        shipTakeDamage, shipSpawn, shipDestroyed,
-        missileTakeDamage, destructibleTakeDamage,
-        startOfTurn, endOfTurn, validateTurn,
-        lockInputs, unlockInputs, lockCamera, unlockCamera,
-        shipUseEnergy, shipUseAmmo, shipDamageShield,
-        shipIsExploding, shipStartExploding, shipUseHealth,
-        shipDealsDamages,
-        shipHealthChange, shipShieldChange, shipArmorShange, shipAmmoChange, shipEnergyChange,
-        destructibleSpawn, destructibleDestroyed,
-        startDialogue, continueDialogue, endDialogue,
-        succeedObjective, failObjective,
-        startTurnExecution, endTurnExecution, endOfRound,
-        loadingProgress, showBattleUI, hideBattleUI
+        
     }
     public enum datas
     {
@@ -33,8 +21,7 @@ public class Notification
         value, // set to this value
         ressource, // inform about ressource type
         gameObject,
-        character,
-        spaceship
+        character
     }
 
     public Object sender;
