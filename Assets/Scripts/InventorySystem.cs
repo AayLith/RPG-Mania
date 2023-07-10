@@ -6,12 +6,17 @@ public class InventorySystem : MonoBehaviour
 {
     Dictionary<Item,int> content = new Dictionary<Item,int>();
     int maximum=99;
+    //active ou désactive le mode debuggage
+    DEBUG=false
     // Start is called before the first frame update
     void Start()
     {
+        if (DEBUG){
+
+        }
         //mettre les tests
         #if UNITY_EDITOR
-            
+
         #endif
     }
 
