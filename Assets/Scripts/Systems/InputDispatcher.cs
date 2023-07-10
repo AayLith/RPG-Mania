@@ -12,7 +12,7 @@ public class InputDispatcher : MonoBehaviour
     InputReceiver _activeReceiver { get { return receivers.Count == 0 ? null : receivers[ receivers.Count - 1 ]; } }
     Dictionary<inputs , input> inputList = new Dictionary<inputs , input> ();
 
-    public enum inputs { Horizontal, Vertical }
+    public enum inputs { Horizontal, Vertical, Interact }
 
     public class input
     {
@@ -22,7 +22,10 @@ public class InputDispatcher : MonoBehaviour
 
     private void Awake ()
     {
-        instance = this;
+        if (instance==null) 
+            instance = this;
+        else
+            Destroy(this);
     }
 
     private void Update ()
@@ -36,7 +39,7 @@ public class InputDispatcher : MonoBehaviour
             if ( !inputList.ContainsKey ( i.axis ) )
                 inputList.Add ( i.axis , new input () );
 
-            // Intégrer la valeur si l'input est actif, sinon la reset à 0
+            // Intï¿½grer la valeur si l'input est actif, sinon la reset ï¿½ 0
             input inp = inputList[ i.axis ];
             inp.value = inp.locked ? 0 : Input.GetAxis ( i.axis + "" );
             if ( i.lockAfterInput )
