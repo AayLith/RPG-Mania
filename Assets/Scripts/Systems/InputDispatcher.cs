@@ -22,10 +22,10 @@ public class InputDispatcher : MonoBehaviour
 
     private void Awake ()
     {
-        if (instance==null) 
+        if ( instance == null )
             instance = this;
         else
-            Destroy(this);
+            Destroy ( this );
     }
 
     private void Update ()
@@ -54,6 +54,13 @@ public class InputDispatcher : MonoBehaviour
         if ( receivers.Contains ( receiver ) )
             closeReceiver ( receiver );
         receivers.Add ( receiver );
+
+        foreach ( InputReceiver.input i in _activeReceiver.inputs )
+        {
+            // Si l'input n'est pas dans le dictionnaire, l'ajouter
+            if ( !inputList.ContainsKey ( i.axis ) )
+                inputList.Add ( i.axis , new input () );
+        }
         StartCoroutine ( lockDispatcher () );
     }
 
