@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Le crayon du destin
   sprite: {fileID: 21300000, guid: 9c4b584fdcc16e84391e2a1f5235a9d3, type: 3}
-  color: {r: 0.49056602, g: 0.1504094, b: 0.1504094, a: 0}
+  color: {r: 0.5754717, g: 0.13843894, b: 0.13843894, a: 1}
+  description: Le crayon magique du developpeur

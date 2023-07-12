@@ -4,20 +4,50 @@ using UnityEngine;
 
 public class InventorySystem : MonoBehaviour
 {
+    public static InventorySystem instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
+
     Dictionary<Item,int> content = new Dictionary<Item,int>();
+    //Button inventory
+    public InventoryButton inventoryButtonPrefab;
+    public Transform inventoryLayout;
+    //liste des boutons
+    public List<InventoryButton> lesBoutons;
+    //test 1 objet
+    public Item[] leTest;
+
+    //val max de l'inventaire
     int maximum=99;
     //active ou désactive le mode debuggage
-    bool DEBUG=false;
+    bool DEBUG=true;
     // Start is called before the first frame update
     void Start()
     {
         if (DEBUG){
-
+            foreach (var item in leTest)
+            {
+                addItem(item, Random.Range(2, 200));
+            }
         }
         //mettre les tests
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
+#endif
 
-        #endif
+        //Fait spawn les bouton
+        foreach (var item in content)
+        {
+            InventoryButton leBouton = Instantiate(inventoryButtonPrefab.gameObject, inventoryLayout).GetComponent<InventoryButton>();
+            leBouton.sprite.sprite = item.Key.sprite;
+            leBouton.sprite.color=item.Key.color;
+            leBouton.amount.text=""+item.Value;
+            leBouton.item=item.Key;
+            Debug.Log(item);
+        }
+
     }
 
     // Update is called once per frame
@@ -29,12 +59,17 @@ public class InventorySystem : MonoBehaviour
     int addItem (Item item, int amount)
     {
         //si l'item n'existe pas rajoute la clef et la quantité
+        if (amount < 0)
+        {
+            return 0;
+        }
         if (!content.ContainsKey(item))
             content.Add(item, 0);
         content[item]+=amount;
 
         if (content[item]>maximum){
-            int itemAjouter=content[item]-maximum;
+            int itemAjouter=(content[item]-amount)+maximum;
+            content[item] = maximum;
             Debug.Log("Impossible d'avoir plus de "+maximum+" objet d'un même type. "+itemAjouter+"/"+amount+" de "+item.name+" on été ajoutés");    
             return itemAjouter;
         }
@@ -54,6 +89,7 @@ public class InventorySystem : MonoBehaviour
 
         if (content[item]<0){
             int detruit=amount+content[item];
+            content[item] = 0;
             Debug.Log("Impossible de retirer plus d'objet d'un même type que le joueur n'en possède. "+detruit+" objets on effectivement été détruits");
             return detruit;
         }
@@ -69,5 +105,10 @@ public class InventorySystem : MonoBehaviour
             return content[item];
         else
             return 0;
+    }
+    
+    public void selectItem(InventoryButton button)
+    {
+        //fera quelque chose
     }
 }
