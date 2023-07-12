@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class CharacterController : InputReceiver
 {
-<<<<<<< HEAD
-    public float speed=1.0F;
-    public void Start ()
-    {
-        InputDispatcher.instance.openReceiver(this);
-    }   
-    public void OnDestroy()
-    {
-        InputDispatcher.instance.closeReceiver(this);
-=======
+    //Mise en commentaire des <<<, >>>, === car erreur: "Assets\Scripts\CharacterController.cs(32,1): error CS8300: Merge conflict marker encountered
+
+
+    //<<<<<<< HEAD
+//=======
     public float speed = 1.0F;
 
     private void Start ()
@@ -24,25 +19,25 @@ public class CharacterController : InputReceiver
     private void OnDestroy ()
     {
         InputDispatcher.instance.closeReceiver ( this );
->>>>>>> 1045d62aa8c7429dc0b7af6a4e14b81168387874
+//>>>>>>> 1045d62aa8c7429dc0b7af6a4e14b81168387874
     }
 
     public override void updateInput ( Dictionary<InputDispatcher.inputs , InputDispatcher.input> inputList )
     {
-<<<<<<< HEAD
+//<<<<<<< HEAD
         transform.position += new Vector3(inputList[InputDispatcher.inputs.Horizontal].value, inputList[InputDispatcher.inputs.Vertical].value, 0)*Time.fixedDeltaTime;
 
-=======
+//=======
         transform.position += new Vector3 ( Input.GetAxis ( "Horizontal" ) , Input.GetAxis ( "Vertical" ) , 0 ) * Time.fixedDeltaTime;
->>>>>>> 1045d62aa8c7429dc0b7af6a4e14b81168387874
+//>>>>>>> 1045d62aa8c7429dc0b7af6a4e14b81168387874
     }
 
     public override void fixedUpdateInput ()
     {
-<<<<<<< HEAD
+//<<<<<<< HEAD
         
-=======
+//=======
         transform.position += new Vector3 ( Input.GetAxis ( "Horizontal" ) , Input.GetAxis ( "Vertical" ) , 0 ) * Time.fixedDeltaTime;
->>>>>>> 1045d62aa8c7429dc0b7af6a4e14b81168387874
+//>>>>>>> 1045d62aa8c7429dc0b7af6a4e14b81168387874
     }
 }

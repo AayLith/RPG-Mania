@@ -8,10 +8,10 @@ public class InventoryButton : MonoBehaviour
 {
     public Image sprite;
     public TMP_Text amount;
-    //public Item item;
+    public Item item;
 
     public void onClic ()
     {
-        //InventorySystem.instance.selectItem ( this );
+        InventorySystem.instance.selectItem ( this );
     }
 }
