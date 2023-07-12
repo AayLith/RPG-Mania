@@ -8,4 +8,5 @@ public class Item : ScriptableObject
     public string name;
     public Sprite sprite;
     public Color color;
+    public string description;
 }
