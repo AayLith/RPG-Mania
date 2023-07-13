@@ -17,6 +17,14 @@ PrefabInstance:
       value: Brave Knight
       objectReference: {fileID: 0}
     - target: {fileID: 3048044297034725014, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
+      propertyPath: health
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048044297034725014, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
+      propertyPath: curHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048044297034725014, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
       propertyPath: abilities.Array.size
       value: 3
       objectReference: {fileID: 0}

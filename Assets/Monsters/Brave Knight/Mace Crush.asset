@@ -32,7 +32,7 @@ MonoBehaviour:
       value: 0
       mode: 0
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
-      value: 1
+      effect: {fileID: 6171261473498265401, guid: 9e289fce3ad6ade44a6531fd2f595dc0, type: 3}
+      value: 0
       mode: 0
   priority: 0

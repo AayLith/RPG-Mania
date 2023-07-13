@@ -20,27 +20,27 @@ MonoBehaviour:
     diceSprite: {fileID: 0}
     faces:
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 3544743927021336320, guid: 92cd1fd58288af24c9aea82bc75198f8, type: 3}
       value: 1
       mode: 0
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 3544743927021336320, guid: 92cd1fd58288af24c9aea82bc75198f8, type: 3}
       value: 2
       mode: 0
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 3544743927021336320, guid: 92cd1fd58288af24c9aea82bc75198f8, type: 3}
       value: 2
       mode: 0
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 3544743927021336320, guid: 92cd1fd58288af24c9aea82bc75198f8, type: 3}
       value: 3
       mode: 0
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 3544743927021336320, guid: 92cd1fd58288af24c9aea82bc75198f8, type: 3}
       value: 3
       mode: 0
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 3544743927021336320, guid: 92cd1fd58288af24c9aea82bc75198f8, type: 3}
       value: 4
       mode: 0
   priority: 0

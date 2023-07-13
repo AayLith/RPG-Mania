@@ -10,8 +10,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1903947098420392452, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
       propertyPath: m_Name
-      value: _Monster (2) Variant
+      value: Skaven Crossbowman
       objectReference: {fileID: 0}
+    - target: {fileID: 3048044297034725014, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
+      propertyPath: _name
+      value: 'Shrewd Skaven '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048044297034725014, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
+      propertyPath: health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048044297034725014, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
+      propertyPath: curHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048044297034725014, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
+      propertyPath: abilities.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048044297034725014, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
+      propertyPath: abilities.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f100f64db9427c41875581d2459f20a, type: 2}
     - target: {fileID: 5927561554679961164, guid: c3c3a5b8efd38894b9320052bb7bde05, type: 3}
       propertyPath: m_RootOrder
       value: 5

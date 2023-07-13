@@ -20,19 +20,19 @@ MonoBehaviour:
     diceSprite: {fileID: 0}
     faces:
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 5002904640033034569, guid: e18c122b761c4384db9fc718ac68f2db, type: 3}
       value: 1
       mode: 0
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 5002904640033034569, guid: e18c122b761c4384db9fc718ac68f2db, type: 3}
       value: 2
       mode: 0
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 5002904640033034569, guid: e18c122b761c4384db9fc718ac68f2db, type: 3}
       value: 2
       mode: 0
     - sprite: {fileID: 0}
-      effect: {fileID: 0}
+      effect: {fileID: 5002904640033034569, guid: e18c122b761c4384db9fc718ac68f2db, type: 3}
       value: 3
       mode: 0
   priority: 0

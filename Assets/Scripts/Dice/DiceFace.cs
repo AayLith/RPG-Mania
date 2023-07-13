@@ -9,5 +9,5 @@ public class DiceFace
     public Effect effect;
     public int value;
     public modes mode;
-    public enum modes { add, substract, multiply, divide, special }
+    public enum modes { special, add, substract, multiply, divide }
 }

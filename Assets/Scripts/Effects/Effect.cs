@@ -8,6 +8,7 @@ public abstract class Effect : MonoBehaviour
     public Monster currentCaster;
     public int currentValue;
     public Sprite sprite;
+    public Color color = Color.white;
 
     public abstract void apply ( Monster target , Monster caster , int value );
 

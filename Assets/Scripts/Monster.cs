@@ -9,4 +9,17 @@ public class Monster : MonoBehaviour
 
     public int health;
     public int curHealth;
+
+    public int healthbarOffset = 90;
+    public int abilitiesOffset = 110;
+
+    private void OnEnable ()
+    {
+        NotificationCenter.instance.PostNotification ( this , Notification.notifications.monsterSpawn , new Hashtable () { { Notification.datas.character , this } } );
+    }
+
+    private void OnDisable ()
+    {
+        NotificationCenter.instance.PostNotification ( this , Notification.notifications.monsterDespawn , new Hashtable () { { Notification.datas.character , this } } );
+    }
 }
