@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f6ff8efdc366044b948eeb5f9337d5b, type: 3}
-  m_Name: Crayon
+  m_Name: new Item 8
   m_EditorClassIdentifier: 
-  name: Le crayon du destin
-  sprite: {fileID: 21300000, guid: 9c4b584fdcc16e84391e2a1f5235a9d3, type: 3}
-  color: {r: 0.5754717, g: 0.13843894, b: 0.13843894, a: 1}
-  description: Le crayon magique du developpeur
+  _name: 
+  sprite: {fileID: 21300000, guid: 6938f66a55670a847a78352493c3a101, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  description: 

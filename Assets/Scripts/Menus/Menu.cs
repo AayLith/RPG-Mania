@@ -31,4 +31,7 @@ public abstract class Menu : InputReceiver
             prevOption ();
         */
     }
+
+    public abstract void open();
+    public abstract void close();
 }
