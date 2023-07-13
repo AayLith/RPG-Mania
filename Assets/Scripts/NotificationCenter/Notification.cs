@@ -13,7 +13,7 @@ public class Notification
     //}
     public enum notifications
     {
-        
+        monsterSpawn, monsterDespawn, monsterTakeDamage
     }
     public enum datas
     {

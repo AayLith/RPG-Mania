@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 21819aad2e4d87b498783f878780ea2a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - THE LAST KINGDOM
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 30c05f6361dbd4e47bb21ddaa22b4552, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

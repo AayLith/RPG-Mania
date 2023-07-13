@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e33adeb6546cb4ba13105fc18033f4, type: 3}
+  m_Name: Shield Up
+  m_EditorClassIdentifier: 
+  _name: Shields Up
+  description: Grants armor to the caster
+  targetingMode: 2
+  dice:
+    _name: Armor
+    diceSprite: {fileID: 0}
+    faces:
+    - sprite: {fileID: 0}
+      effect: {fileID: 5002904640033034569, guid: e18c122b761c4384db9fc718ac68f2db, type: 3}
+      value: 1
+      mode: 0
+    - sprite: {fileID: 0}
+      effect: {fileID: 5002904640033034569, guid: e18c122b761c4384db9fc718ac68f2db, type: 3}
+      value: 2
+      mode: 0
+    - sprite: {fileID: 0}
+      effect: {fileID: 5002904640033034569, guid: e18c122b761c4384db9fc718ac68f2db, type: 3}
+      value: 2
+      mode: 0
+    - sprite: {fileID: 0}
+      effect: {fileID: 5002904640033034569, guid: e18c122b761c4384db9fc718ac68f2db, type: 3}
+      value: 3
+      mode: 0
+  priority: 0
