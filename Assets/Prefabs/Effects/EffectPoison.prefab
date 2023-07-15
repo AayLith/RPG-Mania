@@ -47,5 +47,5 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   currentCaster: {fileID: 0}
   currentValue: 0
-  sprite: {fileID: 21300000, guid: f7cf9f601478cec49b294cb3241a727b, type: 3}
+  sprite: {fileID: 21300000, guid: 7f4fe9427f589414781d1a83baddc74b, type: 3}
   color: {r: 0.24499819, g: 0.5849056, b: 0.27780578, a: 1}

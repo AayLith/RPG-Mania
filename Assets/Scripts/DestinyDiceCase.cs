@@ -49,6 +49,7 @@ public class DestinyDiceCase : MonoBehaviour, IBeginDragHandler, IEndDragHandler
                 currentDice.amount *= face.value;
                 break;
         }
+        currentDice.amount = Mathf.Max ( 0 , currentDice.amount );
         currentDice.amountDisplay.text = "" + currentDice.amount;
         Destroy ( gameObject );
     }

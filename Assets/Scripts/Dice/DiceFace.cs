@@ -5,7 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class DiceFace
 {
-    public Sprite sprite;
     public Effect effect;
     public int value;
     public modes mode;

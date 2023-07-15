@@ -13,7 +13,9 @@ public class Notification
     //}
     public enum notifications
     {
-        monsterSpawn, monsterDespawn, monsterTakeDamage
+        monsterSpawn, monsterDespawn, monsterTakeDamage,
+        destructibleSpawn, destructibleDestroyed, destructibleTakesDamages,
+        startExecution, endExecution
     }
     public enum datas
     {

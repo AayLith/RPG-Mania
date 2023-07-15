@@ -33,7 +33,7 @@ public class HealthbarSystem : MonoBehaviour, NotificationReceiver
                 healthBars[ m ].value = m.curHealth;
                 break;
             case Notification.notifications.monsterDespawn:
-                Destroy ( healthBars[ m ].gameObject );
+                try { Destroy ( healthBars[ m ].gameObject ); } catch { }
                 healthBars.Remove ( m );
                 break;
             case Notification.notifications.monsterTakeDamage:
